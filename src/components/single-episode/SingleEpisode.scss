@@ -1,0 +1,64 @@
+.episode-wrapper{
+    .btn{
+        display: flex;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        width: 80px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin: 2%;
+        &.btn-back{
+            background-color:#5fccc6;
+            color: #fff;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .episode-box{
+        background-color: #d3d3d3;
+        border-radius: 2px;
+        margin-top: 20px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+        margin: 2%;
+        .episode-header{
+            background-color: #A9A9A9;
+            padding: 20px;
+            font-weight: bold;
+            span{
+                font-weight: normal;
+            }
+        }
+        .summary-wrapper{
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .summary-inner{
+                h3{
+                    font-weight: bold;
+                }
+                .episode-summary{
+                    max-width: 80%;
+                    line-height: 1.5em;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                @media screen and (max-width: 700px) {
+                    margin-top: 40px;
+                }
+            }
+            @media screen and (max-width: 700px) {
+                flex-direction: column-reverse;
+                justify-content: center;
+            }
+        }
+    }
+}

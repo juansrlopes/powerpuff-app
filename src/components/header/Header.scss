@@ -1,0 +1,15 @@
+.header{
+    background-color: #ef7cbf;
+    padding: 20px 0;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: color 0.5s ease-out;
+    &:hover{
+        color: #5fccc6;
+    }
+}
